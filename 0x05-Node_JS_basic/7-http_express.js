@@ -38,7 +38,7 @@ function countStudents(path) {
 
 // Route for '/'
 app.get('/', (req, res) => {
-  res.send('Hello ALX!');
+  res.send('Hello Holberton School!');
 });
 
 // Route for '/students'
