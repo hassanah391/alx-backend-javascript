@@ -1,11 +1,10 @@
-process.stdin.setEncoding('utf8');
-
-console.log('Welcome to Holberton School, what is your name?');
+process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
 process.stdin.on('readable', () => {
   const chunk = process.stdin.read();
+
   if (chunk) {
-    console.log(`Your name is: ${chunk}`);
+    process.stdout.write(`Your name is: ${chunk}`);
   }
 });
 
